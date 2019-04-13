@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CMakeFiles /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CMakeFiles /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CoolServer/Conf/CMakeFiles/progress.marks
+	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 CoolServer/Conf/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 CoolServer/Conf/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,44 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 CoolServer/Conf/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 CoolServer/Conf/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named CoolServer
+# Convenience name for target.
+CoolServer/Conf/CMakeFiles/Conf.dir/rule:
+	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 CoolServer/Conf/CMakeFiles/Conf.dir/rule
+.PHONY : CoolServer/Conf/CMakeFiles/Conf.dir/rule
 
-# Build rule for target.
-CoolServer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 CoolServer
-.PHONY : CoolServer
+# Convenience name for target.
+Conf: CoolServer/Conf/CMakeFiles/Conf.dir/rule
 
-# fast build rule for target.
-CoolServer/fast:
-	$(MAKE) -f CoolServer/CMakeFiles/CoolServer.dir/build.make CoolServer/CMakeFiles/CoolServer.dir/build
-.PHONY : CoolServer/fast
-
-#=============================================================================
-# Target rules for targets named Conf
-
-# Build rule for target.
-Conf: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Conf
 .PHONY : Conf
 
 # fast build rule for target.
 Conf/fast:
-	$(MAKE) -f CoolServer/Conf/CMakeFiles/Conf.dir/build.make CoolServer/Conf/CMakeFiles/Conf.dir/build
+	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(MAKE) -f CoolServer/Conf/CMakeFiles/Conf.dir/build.make CoolServer/Conf/CMakeFiles/Conf.dir/build
 .PHONY : Conf/fast
+
+libconfig.o: libconfig.cpp.o
+
+.PHONY : libconfig.o
+
+# target to build an object file
+libconfig.cpp.o:
+	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(MAKE) -f CoolServer/Conf/CMakeFiles/Conf.dir/build.make CoolServer/Conf/CMakeFiles/Conf.dir/libconfig.cpp.o
+.PHONY : libconfig.cpp.o
+
+libconfig.i: libconfig.cpp.i
+
+.PHONY : libconfig.i
+
+# target to preprocess a source file
+libconfig.cpp.i:
+	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(MAKE) -f CoolServer/Conf/CMakeFiles/Conf.dir/build.make CoolServer/Conf/CMakeFiles/Conf.dir/libconfig.cpp.i
+.PHONY : libconfig.cpp.i
+
+libconfig.s: libconfig.cpp.s
+
+.PHONY : libconfig.s
+
+# target to generate assembly for a file
+libconfig.cpp.s:
+	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(MAKE) -f CoolServer/Conf/CMakeFiles/Conf.dir/build.make CoolServer/Conf/CMakeFiles/Conf.dir/libconfig.cpp.s
+.PHONY : libconfig.cpp.s
 
 # Help Target
 help:
@@ -144,8 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... CoolServer"
 	@echo "... Conf"
+	@echo "... libconfig.o"
+	@echo "... libconfig.i"
+	@echo "... libconfig.s"
 .PHONY : help
 
 
@@ -157,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

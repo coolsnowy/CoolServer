@@ -5,7 +5,7 @@
 		<Option title="CoolServer"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\CoolServer\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\CoolServer\;CMake Files\CoolServer\Conf\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug"/>
@@ -83,7 +83,65 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CoolServer/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Conf">
+				<Option output="/Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CoolServer/Conf/libConf.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CoolServer/Conf"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/coolsnowy/Documents/study/CoolServer"/>
+					<Add directory="/Users/coolsnowy/Documents/study/CoolServer/CoolServer"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CoolServer/Conf/Makefile&quot;  VERBOSE=1 Conf"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CoolServer/Conf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CoolServer/Conf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CoolServer/Conf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Conf/fast">
+				<Option output="/Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CoolServer/Conf/libConf.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CoolServer/Conf"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/coolsnowy/Documents/study/CoolServer"/>
+					<Add directory="/Users/coolsnowy/Documents/study/CoolServer/CoolServer"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CoolServer/Conf/Makefile&quot;  VERBOSE=1 Conf/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CoolServer/Conf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CoolServer/Conf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CoolServer/Conf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Conf/libconfig.cpp">
+			<Option target="Conf"/>
+		</Unit>
+		<Unit filename="/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Conf/libconfig.h">
+			<Option target="Conf"/>
+		</Unit>
+		<Unit filename="/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Config.cpp">
+			<Option target="CoolServer"/>
+		</Unit>
+		<Unit filename="/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Config.h">
+			<Option target="CoolServer"/>
+		</Unit>
 		<Unit filename="/Users/coolsnowy/Documents/study/CoolServer/CoolServer/main.cpp">
 			<Option target="CoolServer"/>
 		</Unit>
@@ -92,6 +150,9 @@
 		</Unit>
 		<Unit filename="/Users/coolsnowy/Documents/study/CoolServer/CoolServer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\CoolServer\"/>
+		</Unit>
+		<Unit filename="/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Conf/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\CoolServer\Conf\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

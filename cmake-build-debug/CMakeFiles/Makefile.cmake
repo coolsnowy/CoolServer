@@ -33,6 +33,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.13/Modules/ProcessorCount.cmake"
   "../CMakeLists.txt"
   "../CoolServer/CMakeLists.txt"
+  "../CoolServer/Conf/CMakeLists.txt"
   "CMakeFiles/3.13.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeSystem.cmake"
@@ -48,9 +49,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "CoolServer/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "CoolServer/Conf/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CoolServer/CMakeFiles/CoolServer.dir/DependInfo.cmake"
+  "CoolServer/Conf/CMakeFiles/Conf.dir/DependInfo.cmake"
   )

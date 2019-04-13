@@ -1,4 +1,4 @@
-# Install script for directory: /Users/coolsnowy/Documents/study/CoolServer/CoolServer
+# Install script for directory: /Users/coolsnowy/Documents/study/CoolServer/CoolServer/Conf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -30,11 +30,5 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug/CoolServer/Conf/cmake_install.cmake")
-
 endif()
 

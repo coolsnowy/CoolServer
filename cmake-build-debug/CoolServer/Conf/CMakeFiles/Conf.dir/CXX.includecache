@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Conf/libconfig.cpp
+libconfig.h++
+/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Conf/libconfig.h++
+wincompat.h
+/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Conf/wincompat.h
+libconfig.h
+/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Conf/libconfig.h
+cstring
+-
+cstdlib
+-
+sstream
+-
+
+/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Conf/libconfig.h
+stdio.h
+-
+
+/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Conf/libconfig.h++
+stdio.h
+-
+exception
+-
+string
+-
+
+/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Conf/wincompat.h
+limits.h
+-
+malloc.h
+-
+windows.h
+-
+Shlwapi.h
+-
+unistd.h
+-
+

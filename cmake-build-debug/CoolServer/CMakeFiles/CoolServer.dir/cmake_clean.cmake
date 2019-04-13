@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/CoolServer.dir/Config.cpp.o"
   "CMakeFiles/CoolServer.dir/main.cpp.o"
   "../../bin/CoolServer.pdb"
   "../../bin/CoolServer"

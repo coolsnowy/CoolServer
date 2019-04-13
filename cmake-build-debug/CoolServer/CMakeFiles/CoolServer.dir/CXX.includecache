@@ -6,7 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/coolsnowy/Documents/study/CoolServer/CoolServer/main.cpp
+/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Conf/libconfig.h++
+stdio.h
+-
+exception
+-
+string
+-
+
+/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Config.cpp
+Config.h
+/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Config.h
+Conf/libconfig.h++
+/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Conf/libconfig.h++
 iostream
+-
+
+/Users/coolsnowy/Documents/study/CoolServer/CoolServer/Config.h
+string
 -
 

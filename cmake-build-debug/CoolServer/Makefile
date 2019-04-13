@@ -125,6 +125,33 @@ CoolServer/fast:
 	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(MAKE) -f CoolServer/CMakeFiles/CoolServer.dir/build.make CoolServer/CMakeFiles/CoolServer.dir/build
 .PHONY : CoolServer/fast
 
+Config.o: Config.cpp.o
+
+.PHONY : Config.o
+
+# target to build an object file
+Config.cpp.o:
+	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(MAKE) -f CoolServer/CMakeFiles/CoolServer.dir/build.make CoolServer/CMakeFiles/CoolServer.dir/Config.cpp.o
+.PHONY : Config.cpp.o
+
+Config.i: Config.cpp.i
+
+.PHONY : Config.i
+
+# target to preprocess a source file
+Config.cpp.i:
+	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(MAKE) -f CoolServer/CMakeFiles/CoolServer.dir/build.make CoolServer/CMakeFiles/CoolServer.dir/Config.cpp.i
+.PHONY : Config.cpp.i
+
+Config.s: Config.cpp.s
+
+.PHONY : Config.s
+
+# target to generate assembly for a file
+Config.cpp.s:
+	cd /Users/coolsnowy/Documents/study/CoolServer/cmake-build-debug && $(MAKE) -f CoolServer/CMakeFiles/CoolServer.dir/build.make CoolServer/CMakeFiles/CoolServer.dir/Config.cpp.s
+.PHONY : Config.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -161,6 +188,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... CoolServer"
+	@echo "... Config.o"
+	@echo "... Config.i"
+	@echo "... Config.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

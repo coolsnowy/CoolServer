@@ -7,12 +7,12 @@ include_directories(
         ${PROJECT_SOURCE_DIR}/CoolServer
 )
 
-#link_directories(${PROJECT_SOURCE_DIR}/lib)
+link_directories(${PROJECT_SOURCE_DIR}/lib)
 #ADD_SUBDIRECTORY(Reactor)
 #ADD_SUBDIRECTORY(MemoryPool)
 #ADD_SUBDIRECTORY(Cache)
 #ADD_SUBDIRECTORY(Log)
-#ADD_SUBDIRECTORY(Conf)
+ADD_SUBDIRECTORY(Conf)
 #ADD_SUBDIRECTORY(ThreadPool)
 
 file(COPY "${PROJECT_SOURCE_DIR}/CoolServer/Conf/CoolServer.conf" DESTINATION "${EXECUTABLE_OUTPUT_PATH}")
@@ -24,7 +24,7 @@ target_link_libraries(
 #        MemoryPool
 #        Cache
 #        Log
-#        Conf
+        Conf
 #        ThreadPool
         pthread
 
